@@ -40,7 +40,7 @@ curl --silent --max-time 60 --location "$PHP_URL" | tar xz
 
 MODPHP_URL="https://s3.amazonaws.com/f.cl.ly/items/2U3d0V113v0K410s3c3W/libphp5.so-5.4.9.tar.gz"
 echo "-----> Updating libphp5.so to $PHP_VERSION"
-curl --silent --max-time 60 --location "$MODPHP_URL" | tar xz
+curl --silent --max-time 60 --location "$MODPHP_URL" | tar xz -C apache/modules
 
 # update config files
 cp $LP_DIR/conf/httpd.conf $APACHE_PATH/conf
