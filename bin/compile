@@ -38,6 +38,10 @@ PHP_URL="https://s3.amazonaws.com/f.cl.ly/items/322B211c3k1t3V0T0F1X/php-5.4.9.t
 echo "-----> Bundling PHP version $PHP_VERSION"
 curl --silent --max-time 60 --location "$PHP_URL" | tar xz
 
+MODPHP_URL="https://s3.amazonaws.com/f.cl.ly/items/2U3d0V113v0K410s3c3W/libphp5.so-5.4.9.tar.gz"
+echo "-----> Updating libphp5.so to $PHP_VERSION"
+curl --silent --max-time 60 --location "$MODPHP_URL" | tar xz
+
 # update config files
 cp $LP_DIR/conf/httpd.conf $APACHE_PATH/conf
 cp $LP_DIR/conf/php.ini php
