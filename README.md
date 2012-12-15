@@ -62,13 +62,6 @@ Hacking
 To change this buildpack, fork it on Github. Push up changes to your fork, then create a test app with --buildpack <your-github-url> and push to it.
 
 
-Updated by howanghk
--------------------
-
-PHP 5.4.9 compiled with:
-./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql --with-pdo-mysql --with-pgsql --with-pdo-pgsql --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --enable-bcmath --enable-mbstring
-
-
 Meta
 ----
 
