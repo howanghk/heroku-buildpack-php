@@ -74,7 +74,11 @@ Updated by howanghk
 
 PHP 5.4.9 compiled with:
 
-    ./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql --with-pdo-mysql --with-pgsql --with-pdo-pgsql --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --enable-bcmath --enable-mbstring
+    ./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql --with-pdo-mysql --with-pgsql --with-pdo-pgsql --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --with-mcrypt=/app/local --enable-bcmath --enable-mbstring
+
+libmcrypt 2.5.8 compiled with:
+
+    ./configure --prefix=/app/local --disable-rpath --disable-posix-threads --enable-dynamic-loading
 
 To use this buildpack for a new app:
 
