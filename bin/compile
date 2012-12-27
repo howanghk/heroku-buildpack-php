@@ -36,7 +36,7 @@ curl --silent --max-time 60 --location "$APACHE_URL" | tar xz
 
 PHP_URL="https://s3.amazonaws.com/f.cl.ly/items/1h2B0C321D1Z041y3A2D/php-5.4.9.tar.gz"
 echo "-----> Bundling PHP version $PHP_VERSION"
-curl --silent --max-time 60 --location "$PHP_URL" | tar xz
+curl --silent --max-time 120 --location "$PHP_URL" | tar xz
 
 MODPHP_URL="https://s3.amazonaws.com/f.cl.ly/items/3p3C3l1z3L1x0k2X2a2P/libphp5.so-5.4.9.tar.bz2"
 echo "-----> Updating libphp5.so to $PHP_VERSION"
