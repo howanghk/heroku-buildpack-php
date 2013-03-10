@@ -72,11 +72,11 @@ Many thanks to Keith Rarick for the help with assorted Unix topics :)
 Updated by howanghk
 -------------------
 
-PHP 5.4.10 compiled with:
+PHP 5.4.12 compiled with:
 
-    curl -O http://us3.php.net/distributions/php-5.4.10.tar.bz2
-    tar jxvf php-5.4.10.tar.bz2
-    cd php-5.4.10
+    curl -O http://us3.php.net/distributions/php-5.4.12.tar.bz2
+    tar jxvf php-5.4.12.tar.bz2
+    cd php-5.4.12
     ./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql --with-pdo-mysql --with-pgsql --with-pdo-pgsql --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl --with-mcrypt=/app/local --enable-bcmath --enable-mbstring
     make
     make install

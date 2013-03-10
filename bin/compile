@@ -7,7 +7,7 @@ set -e
 # config
 APACHE_VERSION="2.2.22"
 APACHE_PATH="apache"
-PHP_VERSION="5.4.10"
+PHP_VERSION="5.4.12"
 PHP_PATH="php"
 
 BIN_DIR=$(dirname $0)
@@ -34,11 +34,11 @@ APACHE_URL="https://s3.amazonaws.com/php-lp/apache-$APACHE_VERSION.tar.gz"
 echo "-----> Bundling Apache version $APACHE_VERSION"
 curl --silent --max-time 60 --location "$APACHE_URL" | tar xz
 
-PHP_URL="https://s3.amazonaws.com/f.cl.ly/items/403l1K1f1A3O2V3T0s2c/php-5.4.10.tar.gz"
+PHP_URL="https://s3.amazonaws.com/f.cl.ly/items/2K171V020l2T0P371a05/php-5.4.12.tar.gz"
 echo "-----> Bundling PHP version $PHP_VERSION"
 curl --silent --max-time 120 --location "$PHP_URL" | tar xz
 
-MODPHP_URL="https://s3.amazonaws.com/f.cl.ly/items/131Y1E0S3w2C0Z393115/libphp5.so-5.4.10.tar.gz"
+MODPHP_URL="https://s3.amazonaws.com/f.cl.ly/items/0N2A0v0H2s1j0m1d3t1z/libphp5.so-5.4.12.tar.gz"
 echo "-----> Updating libphp5.so to $PHP_VERSION"
 curl --silent --max-time 60 --location "$MODPHP_URL" | tar xz -C apache/modules
 
